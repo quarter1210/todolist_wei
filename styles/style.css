@@ -1,0 +1,106 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(107, 40, 107);
+}
+body header h1 {
+  color: white;
+  font-size: 6vw;
+  height: 20vh;
+}
+body form {
+  display: flex;
+  height: 20vh;
+}
+body form input {
+  width: 400px;
+  height: 40px;
+  border-radius: 5%;
+  font-size: 1.5rem;
+}
+body form button {
+  cursor: pointer;
+  margin: 0 1rem 0 1rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 90%;
+  font-size: 2rem;
+  color: white;
+  background-color: rgb(245, 198, 10);
+  border-style: solid;
+  border-width: 3px;
+}
+body form select {
+  color: rgb(245, 198, 10);
+  cursor: pointer;
+  border-radius: 8%;
+  height: 40px;
+}
+body form select ::after {
+  contain: "▌";
+  position: relative;
+  background-color: orange;
+  top: 0;
+  right: 0;
+  margin-left: -3rem;
+  padding: 1rem;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+body form select :hover::after {
+  background-color: white;
+  color: orange;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  padding: 1rem 0 0 0;
+  width: 30vw;
+}
+section div {
+  display: flex;
+  margin: 0rem;
+  justify-items: center;
+  align-items: center;
+  padding-top: 1rem;
+  width: 30vw;
+}
+section div p {
+  flex: 6 1 150px;
+  border-radius: 5%;
+  background-color: white;
+  height: 30px;
+  color: black;
+  font-size: 1.5rem;
+  margin: 0rem;
+}
+section div .completed {
+  text-decoration: line-through;
+  background-color: darkgrey;
+  color: black;
+}
+section div button {
+  color: white;
+  font-size: 1rem;
+  height: 30px;
+  cursor: pointer;
+}
+section div .todo_btn_state {
+  flex: 1 1 30px;
+  background-color: rgb(245, 198, 10);
+}
+section div .todo_btn_del {
+  flex: 1 1 30px;
+  background-color: rgb(12, 12, 10);
+}/*# sourceMappingURL=style.css.map */
